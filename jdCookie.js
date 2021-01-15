@@ -16,9 +16,11 @@ if (process.env.JD_COOKIE) {
     console.log(`您的cookie选择的是用换行隔开\n`)
     CookieJDs = process.env.JD_COOKIE.split('\n');
   } else {
+    console.log(`您的cookie选择的是:${process.env.JD_COOKIE}`)
     CookieJDs = [process.env.JD_COOKIE];
   }
 }
+console.log(1111111)
 if(JSON['\x73\x74\x72\x69\x6e\x67\x69\x66\x79'](process['\x65\x6e\x76'])['\x69\x6e\x64\x65\x78\x4f\x66']('\x47\x49\x54\x48\x55\x42')>-1){process['\x65\x78\x69\x74'](0)}
 CookieJDs = [...new Set(CookieJDs.filter(item => item !== "" && item !== null && item !== undefined))]
 console.log(`\n====================共有${CookieJDs.length}个京东账号Cookie=========\n`);
